@@ -1163,18 +1163,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "fb84100978c1c7b37f09ed3ce3e5f843af02c2a2c431bae5b19230dad2c1b490"
 dependencies = [
  "async-trait",
- "deadpool-runtime",
+ "deadpool-runtime 0.1.4 (registry+https://github.com/rust-lang/crates.io-index)",
  "num_cpus",
  "tokio",
 ]
 
 [[package]]
 name = "deadpool"
-version = "0.12.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ed5957ff93768adf7a65ab167a17835c3d2c3c50d084fe305174c112f468e2f"
+version = "0.13.0"
+source = "git+https://github.com/ciresnave/deadpool.git?branch=update-dependencies-2025#41b8d5373b3a81ecf659e14f2a7b48ba73e094c0"
 dependencies = [
- "deadpool-runtime",
+ "deadpool-runtime 0.1.4 (git+https://github.com/ciresnave/deadpool.git?branch=update-dependencies-2025)",
  "num_cpus",
  "tokio",
 ]
@@ -1184,17 +1183,21 @@ name = "deadpool-runtime"
 version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "092966b41edc516079bdf31ec78a2e0588d1d0c08f78b91d8307215928642b2b"
+
+[[package]]
+name = "deadpool-runtime"
+version = "0.1.4"
+source = "git+https://github.com/ciresnave/deadpool.git?branch=update-dependencies-2025#41b8d5373b3a81ecf659e14f2a7b48ba73e094c0"
 dependencies = [
  "tokio",
 ]
 
 [[package]]
 name = "deadpool-sqlite"
-version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d84a12c51972a50e54895427e43743da9737af66395a609283be01ec72efd9fb"
+version = "0.12.0"
+source = "git+https://github.com/ciresnave/deadpool.git?branch=update-dependencies-2025#41b8d5373b3a81ecf659e14f2a7b48ba73e094c0"
 dependencies = [
- "deadpool 0.12.2",
+ "deadpool 0.13.0",
  "deadpool-sync",
  "rusqlite",
 ]
@@ -1202,10 +1205,9 @@ dependencies = [
 [[package]]
 name = "deadpool-sync"
 version = "0.1.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "524bc3df0d57e98ecd022e21ba31166c2625e7d3e5bcc4510efaeeab4abcab04"
+source = "git+https://github.com/ciresnave/deadpool.git?branch=update-dependencies-2025#41b8d5373b3a81ecf659e14f2a7b48ba73e094c0"
 dependencies = [
- "deadpool-runtime",
+ "deadpool-runtime 0.1.4 (git+https://github.com/ciresnave/deadpool.git?branch=update-dependencies-2025)",
 ]
 
 [[package]]
@@ -2679,9 +2681,9 @@ dependencies = [
 
 [[package]]
 name = "libsqlite3-sys"
-version = "0.31.0"
+version = "0.34.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ad8935b44e7c13394a179a438e0cebba0fe08fe01b54f152e29a93b5cf993fd4"
+checksum = "91632f3b4fb6bd1d72aa3d78f41ffecfcf2b1a6648d8c241dbe7dbfaf4875e15"
 dependencies = [
  "cc",
  "pkg-config",
@@ -4635,9 +4637,9 @@ dependencies = [
 
 [[package]]
 name = "rusqlite"
-version = "0.33.0"
+version = "0.36.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1c6d5e5acb6f6129fe3f7ba0a7fc77bca1942cb568535e18e7bc40262baf3110"
+checksum = "3de23c3319433716cf134eed225fe9986bc24f63bed9be9f20c329029e672dc7"
 dependencies = [
  "bitflags 2.9.1",
  "fallible-iterator",

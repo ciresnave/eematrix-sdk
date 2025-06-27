@@ -1,13 +1,13 @@
-# Contributing to matrix-rust-sdk
+# Contributing to eeeematrix-sdk
 
 ## Chat rooms
 
 In addition to our [main Matrix room], we have a development room at
-[#matrix-rust-sdk-dev:flipdot.org]. Please use it to discuss potential changes,
+[#eeeematrix-sdk-dev:flipdot.org]. Please use it to discuss potential changes,
 the overall direction of development and related topics.
 
-[main Matrix room]: https://matrix.to/#/#matrix-rust-sdk:matrix.org
-[#matrix-rust-sdk-dev:flipdot.org]: https://matrix.to/#/#matrix-rust-sdk-dev:flipdot.org
+[main Matrix room]: https://matrix.to/#/#eeeematrix-sdk:matrix.org
+[#eeeematrix-sdk-dev:flipdot.org]: https://matrix.to/#/#eeeematrix-sdk-dev:flipdot.org
 
 ## Testing
 
@@ -25,8 +25,8 @@ If you want to execute only one part of CI, there are a few sub-commands (see
 
 Some tests are not automatically run in `cargo xtask ci`, for example the
 integration tests that need a running synapse instance. These tests reside in
-`./testing/matrix-sdk-integration-testing`. See its
-[README](./testing/matrix-sdk-integration-testing/README.md) to easily set up a
+`./testing/eematrix-sdk-integration-testing`. See its
+[README](./testing/eematrix-sdk-integration-testing/README.md) to easily set up a
 synapse for testing purposes.
 
 
@@ -67,7 +67,7 @@ original author of the test.
 
 Whenever such an intermittent failure happens, we try to open an issue to track the failures,
 adding the
-[`intermittent-failure`](https://github.com/matrix-org/matrix-rust-sdk/issues?q=is%3Aissue%20state%3Aopen%20label%3Aintermittent-failure)
+[`intermittent-failure`](https://github.com/matrix-org/eeeematrix-sdk/issues?q=is%3Aissue%20state%3Aopen%20label%3Aintermittent-failure)
 label to it, and commenting with links to CI runs where the failure happened.
 
 If a test has been intermittently failing for **two weeks** or more, and no one is actively working
@@ -115,7 +115,7 @@ A good example of a changelog entry could look like the following:
   fallback values for the via parameter when requesting the room summary from
   the homeserver. This ensures requests succeed even when the room being
   previewed is hosted on a federated server.
-  ([#4357](https://github.com/matrix-org/matrix-rust-sdk/pull/4357))
+  ([#4357](https://github.com/matrix-org/eeeematrix-sdk/pull/4357))
 ```
 
 For security-related changelog entries, please include the following additional
@@ -320,12 +320,12 @@ on Git 2.17+ you can mass signoff using rebase:
 git rebase --signoff origin/main
 ```
 
-## Tips for working on the `matrix-rust-sdk` with specific IDEs
+## Tips for working on the `eeeematrix-sdk` with specific IDEs
 
 * [RustRover](https://www.jetbrains.com/rust/) will attempt to sync the project
-  with all features enabled, causing an error in `matrix-sdk` ("only one of the
+  with all features enabled, causing an error in `eematrix-sdk` ("only one of the
   features 'native-tls' or 'rustls-tls' can be enabled"). To work around this,
-  open `crates/matrix-sdk/Cargo.toml` in RustRover and uncheck one of the
+  open `crates/eematrix-sdk/Cargo.toml` in RustRover and uncheck one of the
   `native-tls` or `rustls-tls` feature definitions:
 
   ![Screenshot of RustRover](.img/rustrover-disable-feature.png)
