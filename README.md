@@ -2,7 +2,7 @@
 <div align="center">
     <i>Your all-in-one toolkit for creating Matrix clients with Rust, from simple bots to full-featured apps.</i>
     <br/><br/>
-    <img src="contrib/logo.svg">
+    <img src="contrib/logo.png">
     <br>
     <hr>
     <a href="https://github.com/matrix-org/eeeematrix-sdk/releases">
@@ -47,15 +47,25 @@ The EEMatrix SDK is made up of several crates that build on top of each other. H
 
 ## Status
 
-The library is considered production ready and backs multiple client
+The library is considered production ready and is a direct fork of the matrix-sdk crate which backs multiple client
 implementations such as Element X
 [[1]](https://github.com/element-hq/element-x-ios)
 [[2]](https://github.com/element-hq/element-x-android),
 [Fractal](https://gitlab.gnome.org/World/fractal) and [iamb](https://github.com/ulyssa/iamb). Client developers should feel
 confident to build upon it.
 
-Development of the SDK has been primarily sponsored by Element though accepts
-contributions from all.
+## Why EEMatrix SDK?
+
+EEMatrix SDK is a community-maintained fork of the original matrix-rust-sdk, created to provide developers with:
+
+- **Modern Dependencies**: Regular updates to the latest versions of core Rust ecosystem crates (tokio, serde, reqwest, etc.)
+- **Enhanced Compatibility**: Resolved dependency conflicts and improved integration with contemporary Rust tooling
+- **Faster Innovation**: More agile development cycle for features and improvements that benefit the broader community
+- **Active Maintenance**: Dedicated focus on dependency freshness, security patches, and ecosystem compatibility
+
+We maintain full compatibility with the upstream Matrix specification and deeply respect the excellent foundation provided by the original matrix-rust-sdk team. This fork exists to serve developers who need cutting-edge dependency management and rapid iteration while preserving the robust, production-tested core that makes Matrix development in Rust a joy.
+
+Both projects serve the Matrix ecosystem, and we encourage developers to choose the SDK that best fits their project's needs and maintenance philosophy.
 
 ## Bindings
 
