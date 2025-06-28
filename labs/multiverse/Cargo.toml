@@ -19,10 +19,10 @@ crossterm = "0.28.1"
 futures-util.workspace = true
 imbl.workspace = true
 itertools.workspace = true
-matrix-sdk = { path = "../../crates/matrix-sdk", features = ["sso-login"] }
-matrix-sdk-base = { path = "../../crates/matrix-sdk-base" }
-matrix-sdk-common = { path = "../../crates/matrix-sdk-common" }
-matrix-sdk-ui = { path = "../../crates/matrix-sdk-ui" }
+matrix-sdk = { path = "../../crates/eematrix-sdk", features = ["sso-login"] }
+matrix-sdk-base = { path = "../../crates/eematrix-base" }
+matrix-sdk-common = { path = "../../crates/eematrix-common" }
+matrix-sdk-ui = { path = "../../crates/eematrix-ui" }
 ratatui = { version = "0.29.0", features = ["unstable-widget-ref"] }
 rpassword = "7.3.1"
 serde_json.workspace = true

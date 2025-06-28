@@ -16,7 +16,7 @@ test = false
 anyhow.workspace = true
 dirs = "6.0.0"
 futures-util.workspace = true
-matrix-sdk-ui = { path = "../../crates/matrix-sdk-ui" }
+matrix-sdk-ui = { path = "../../crates/eematrix-ui" }
 rand.workspace = true
 serde.workspace = true
 serde_json.workspace = true
@@ -25,7 +25,7 @@ tracing-subscriber.workspace = true
 url.workspace = true
 
 [dependencies.matrix-sdk]
-path = "../../crates/matrix-sdk"
+path = "../../crates/eematrix-sdk"
 features = ["local-server"]
 
 [lints]
